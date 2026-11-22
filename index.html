@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CC Marketing Media Group LLC | Cloud, App & Web Engineering</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #131a2a;
+      --border: #1f293d;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0ea5e9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 1.25rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      position: sticky;
+      top: 0;
+      background: rgba(11, 15, 25, 0.95);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+    }
+    .logo { font-size: 1.2rem; font-weight: 800; letter-spacing: 0.5px; color: #fff; }
+    .logo span { color: var(--accent); }
+    nav a { margin-left: 1.5rem; color: var(--muted); font-weight: 500; font-size: 0.95rem; }
+    nav a:hover { color: #fff; }
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 5rem 5% 4rem;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(56, 189, 248, 0.12);
+      color: var(--accent);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.25rem);
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+      font-weight: 800;
+    }
+    .hero p {
+      color: var(--muted);
+      max-width: 680px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #0b0f19;
+      font-weight: 700;
+      padding: 0.85rem 1.75rem;
+      border-radius: 8px;
+      transition: background 0.2s;
+      margin: 0.35rem;
+    }
+    .btn:hover { background: var(--accent-hover); }
+    .btn-outline {
+      background: transparent;
+      color: #fff;
+      border: 1px solid var(--border);
+    }
+    .btn-outline:hover { border-color: var(--accent); background: rgba(56, 189, 248, 0.08); }
+    section { max-width: 1100px; margin: 0 auto; padding: 4rem 5%; }
+    h2 { font-size: 1.9rem; margin-bottom: 0.5rem; }
+    .sub { color: var(--muted); margin-bottom: 2.5rem; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.75rem;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .card:hover { transform: translateY(-4px); border-color: var(--accent); }
+    .card h3 { margin-bottom: 0.75rem; font-size: 1.2rem; color: #fff; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      background: #1e293b;
+      color: var(--accent);
+      padding: 0.2rem 0.6rem;
+      border-radius: 6px;
+      margin-top: 1rem;
+      margin-right: 0.35rem;
+    }
+    .cta-box {
+      background: linear-gradient(135deg, #131a2a 0%, #0f172a 100%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 2.5rem 5%;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">CC Marketing <span>Media Group LLC</span></div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#tools">Cloud Tools</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div class="badge">U.S.-Based B2B Engineering & Digital Agency</div>
+    <h1>Cloud Infrastructure, Custom Apps & Digital Growth</h1>
+    <p>We help startups and businesses worldwide deploy reliable cloud environments, automate monitoring, build custom web & mobile apps, and scale their digital presence.</p>
+    <a href="#contact" class="btn">Request a Quote / Retainer</a>
+    <a href="https://github.com" target="_blank" class="btn btn-outline">View GitHub Organization</a>
+  </div>
+
+  <section id="services">
+    <h2>Core Services</h2>
+    <p class="sub">Flexible B2B contracts, monthly support retainers, and custom project builds.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>☁️ Cloud Engineering & Support</h3>
+        <p>24/7-ready remote cloud troubleshooting, Linux server administration, Docker deployments, cost optimization, and automated monitoring retainers.</p>
+        <span class="tag">AWS / Azure / GCP</span>
+        <span class="tag">Linux & Docker</span>
+      </div>
+      <div class="card">
+        <h3>📱 App Development</h3>
+        <p>Custom web and mobile applications built for speed, reliability, and seamless API integrations from prototype to production launch.</p>
+        <span class="tag">Full-Stack</span>
+        <span class="tag">APIs & Automation</span>
+      </div>
+      <div class="card">
+        <h3>💻 Web Design & Development</h3>
+        <p>High-converting corporate websites, landing pages, and ongoing technical maintenance tailored for modern businesses.</p>
+        <span class="tag">Responsive UI</span>
+        <span class="tag">SEO & Speed</span>
+      </div>
+      <div class="card">
+        <h3>📈 Marketing & Media</h3>
+        <p>Hyper-local and digital brand development, content strategy, and media campaigns that turn traffic into measurable revenue.</p>
+        <span class="tag">Brand Growth</span>
+        <span class="tag">Media Strategy</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="tools">
+    <h2>Proprietary & Open-Source Tools</h2>
+    <p class="sub">In-house engineering tools built and maintained by CC Marketing Media Group LLC.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Docker IT Monitoring Stack</h3>
+        <p>Containerized infrastructure and server health monitoring stack designed for rapid deployment, real-time alerts, and reduced downtime.</p>
+        <p style="margin-top:1rem;"><a href="https://github.com" target="_blank">Inspect Repository →</a></p>
+      </div>
+      <div class="card">
+        <h3>Tiger-Eye Security & Diagnostics</h3>
+        <p>Lightweight Go-based diagnostic and security inspection utility built for fast system auditing and operational visibility.</p>
+        <p style="margin-top:1rem;"><a href="https://github.com" target="_blank">Inspect Repository →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="cta-box">
+      <h2>Ready to Work Together?</h2>
+      <p class="sub" style="margin-bottom:1.5rem;">Available for U.S. & international B2B contracts, fractional cloud support retainers, and custom builds (EST Time Zone).</p>
+      <a href="mailto:your-email@://example.com" class="btn">Email CC Marketing Media Group LLC</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 CC Marketing Media Group LLC. All rights reserved. | Registered U.S. Business Entity</p>
+    <p style="margin-top:0.5rem;">Featured Media Property: <a href="https://nofilterfoodtrucksandrestaurant.com" target="_blank">No Filter Food Trucks & Restaurant</a></p>
+  </footer>
+
+</body>
+</html>
